@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "January 2024 . Starting ",
+		"role": "The Creative Spark",
+		"company": "Foundational Designs",
+		"description": "Exploring the core principles of aesthetics and visual storytelling.",
+		"logo": "/assets/images/experiences/sparkler.ico"
+	},
+	{
+		"dates": "January 2025 · December 2025",
+		"role": "Technical Mastery",
+		"company": "Adobe Creative Suite",
+		"description": "Developing expert-level skills in Photoshop and Illustrator for modern branding.",
+		"logo": "/assets/images/experiences/setting.ico"
+	},
+	{
+		"dates": "January 2026 · Present",
+		"role": "Graphic Designer",
+		"company": "Specializing in High-Impact Visuals",
+		"description": "Crafting clean brand identities and thumbnails that drive engagement.",
+		"logo": "/assets/images/experiences/adobe.ico"
+	}
+]
