@@ -4,23 +4,23 @@ import PostsLoop from "../posts-loop.astro";
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0 mt-8">
   <div class="w-full">
-    <div class="grid grid-cols-1 gap-4">
-      <PostsLoop count="3" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <PostsLoop count="5" />
 
       <a 
         href="/posts" 
-        class="relative flex flex-row items-center justify-center h-16 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-700 group hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all duration-300 bg-white dark:bg-neutral-950"
+        class="relative flex flex-col items-center justify-center min-h-[150px] border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-700 group hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all duration-300 bg-white dark:bg-neutral-950"
       >
-        <div class="flex flex-row items-center space-x-3">
-          <span class="text-[10px] font-bold text-neutral-900 dark:text-white uppercase tracking-widest">
-            View All Writing
-          </span>
-
-          <div class="p-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 group-hover:bg-black dark:group-hover:bg-white transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-neutral-600 dark:text-neutral-400 group-hover:text-white dark:group-hover:text-black transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex flex-col items-center text-center px-4">
+          <div class="mb-2 p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 group-hover:bg-black dark:group-hover:bg-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-neutral-600 dark:text-neutral-400 group-hover:text-white dark:group-hover:text-black transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </div>
+          <span class="text-[10px] font-bold text-neutral-900 dark:text-white uppercase tracking-widest">
+            View All posts
+          </span>
         </div>
       </a>
     </div>

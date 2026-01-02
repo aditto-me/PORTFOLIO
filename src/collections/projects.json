@@ -1,8 +1,50 @@
 [
   {
-    "name": "My Photoshop Branding",
+    "name": "My practice project",
     "description": "A detailed look at my latest logo design.",
     "image": "/assets/images/projects/practice.png",
     "url": "project/practice"
+  },
+  {
+  "name": "My practice project",
+  "description": "A detailed look at my latest logo design.",
+  "image": "/assets/images/projects/practice.png",
+  "url": "project/practice"
+  },
+ {
+    "name": "My practice project",
+    "description": "A detailed look at my latest logo design.",
+    "image": "/assets/images/projects/practice.png",
+    "url": "project/practice"
+  },
+  {
+  "name": "My practice project",
+  "description": "A detailed look at my latest logo design.",
+  "image": "/assets/images/projects/practice.png",
+  "url": "project/practice"
+  },
+ {
+    "name": "My practice project",
+    "description": "A detailed look at my latest logo design.",
+    "image": "/assets/images/projects/practice.png",
+    "url": "project/practice"
+  },
+  {
+  "name": "My practice project",
+  "description": "A detailed look at my latest logo design.",
+  "image": "/assets/images/projects/practice.png",
+  "url": "project/practice"
+  },
+ {
+    "name": "My practice project",
+    "description": "A detailed look at my latest logo design.",
+    "image": "/assets/images/projects/practice.png",
+    "url": "project/practice"
+  },
+  {
+  "name": "My practice project",
+  "description": "A detailed look at my latest logo design.",
+  "image": "/assets/images/projects/practice.png",
+  "url": "project/practice"
   }
 ]
