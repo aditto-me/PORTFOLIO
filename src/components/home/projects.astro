@@ -1,37 +1,37 @@
 ---
 import projects from "../../collections/projects.json";
-import Button from "../button.astro";
 import Project from "../project.astro";
+
+// Safe data check
+const allProjects = projects || [];
+const limitProjects = allProjects.slice(0, 5);
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
-  <h2
-    class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
-  >
-    My Projects
-  </h2>
-  <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-    Here are some of my recent projects. I'm always working on something new, so
-    check back often!
-  </p>
-  <div
-    class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7"
-  >
+  <div class="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
     {
-      projects.map((project) => {
-        return (
-          <Project
-            name={project.name}
-            description={project.description}
-            image={project.image}
-            url={project.url}
-          />
-        )
-      })
+      limitProjects.map((project) => (
+        <Project
+          name={project.name}
+          image={project.image}
+          url={project.url}
+        />
+      ))
     }
-  </div>
 
-  <div class="flex items-center justify-center w-full py-5">
-    <Button text="View All My Projects" link="/projects" />
+    <a 
+      href="/projects" 
+      class="relative flex flex-col items-center justify-center aspect-video border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-700 group hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all duration-300 bg-white dark:bg-neutral-950"
+    >
+      <div class="flex flex-col items-center text-center px-4">
+        <div class="mb-2 p-2 rounded-full bg-neutral-100 dark:bg-neutral-800 group-hover:bg-black dark:group-hover:bg-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-neutral-600 dark:text-neutral-400 group-hover:text-white dark:group-hover:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </div>
+        <span class="text-[10px] font-bold text-neutral-900 dark:text-white uppercase tracking-widest">View All</span>
+      </div>
+    </a>
   </div>
+  <div class="pb-20"></div>
 </section>
